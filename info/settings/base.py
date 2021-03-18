@@ -22,8 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'wn+-lzp=yodw1si&%&!8(6r6d$xy1-_*2ndr#@2n5ir^y&g^1f'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-
+#AUTH_USER_MODEL = 'usuarios.Usuario'
 
 # Application definition
 
@@ -34,6 +33,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'apps.usuarios',
+    'apps.posts',
 ]
 
 MIDDLEWARE = [

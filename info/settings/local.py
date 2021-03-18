@@ -7,7 +7,7 @@ ALLOWED_HOSTS = []
 DATABASES = {
     'default':{
         'ENGINE': 'sql_server.pyodbc',
-        'NAME':'info',
+        'NAME':'info-testing',
         'Trusted_Connection':'yes',
         'HOST':'localhost\SQLEXPRESS',
         'OPTIONS':{

@@ -7,6 +7,15 @@
     <title>PRUEBA</title>
 </head>
 <body>
+    home.html
+    {% if request.user.is_authenticated %}
+        <p>Bienvenido {{request.user.username}}! </p>
+        <a href="{% url 'usuarios:logout' %}">Cerrar sesion</a>
+    {% endif %}
     <h1>PAGINA DE PRUEBA</h1>
+    <a href="{% url 'usuarios:bienvenida' %}">Zona de usuarios</a>
+    <a href="{% url 'usuarios:registro' %}">Registrarse</a>
+    <a href="{% url 'usuarios:login' %}">Iniciar sesion</a>
+
 </body>
 </html>
